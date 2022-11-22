@@ -3,7 +3,6 @@ from turtle import Turtle, Screen
 tim = Turtle()
 screen = Screen()
 
-
 def move_forwards():
     tim.forward(10)
 
@@ -19,10 +18,10 @@ def turn_right():
     tim.setheading(new_heading)
 
 def clear():
-    tim.clear()
-    tim.penup()
-    tim.home()
-    tim.pendown()
+    tim.clear()     # Limpiar el dibujo
+    tim.penup()     # Subir boligrafo y dejar de pintar
+    tim.home()      # Lleva a tortuga a casa
+    tim.pendown()   # Baja nuevamente el boligrafo
 
 screen.listen()
 screen.onkey(move_forwards, "Up")
